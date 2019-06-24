@@ -1,4 +1,4 @@
-package com.example.forecastmvvm.data.response
+package com.example.forecastmvvm.data.db.entity
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
