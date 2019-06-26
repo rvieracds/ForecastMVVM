@@ -3,6 +3,10 @@ package com.example.forecastmvvm.data.db.unitlocalized
 import androidx.room.ColumnInfo
 
 data class ImperialCurrentWeatherEntry (
+    @ColumnInfo(name = "humidity")
+    override val humidity: Int,
+    @ColumnInfo(name = "lastUpdated")
+    override val lastUpdated: String,
     @ColumnInfo(name = "tempF")
     override val temperature: Double,
     @ColumnInfo(name = "condition_text")

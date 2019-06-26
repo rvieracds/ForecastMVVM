@@ -3,6 +3,10 @@ package com.example.forecastmvvm.data.db.unitlocalized
 import androidx.room.ColumnInfo
 
 data class MetricCurrentWeatherEntry(
+    @ColumnInfo(name = "humidity")
+    override val humidity: Int,
+    @ColumnInfo(name = "lastUpdated")
+    override val lastUpdated: String,
     @ColumnInfo(name = "tempC")
     override val temperature: Double,
     @ColumnInfo(name = "condition_text")
